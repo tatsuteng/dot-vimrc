@@ -1,10 +1,12 @@
 set encoding=utf-8
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set nofoldenable
 
 syntax enable
 
 " Plugin Confiurations
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
