@@ -46,10 +46,14 @@ filetype plugin indent on    " required
 map <C-n> :NERDTreeToggle<CR>
 map <C-t> :TagbarToggle<CR>
 
+:let mapleader = '\'
+
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+nnoremap <leader>jd :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>fi :YcmCompleter FixIt<CR>
 
 " Tabs
 set tabstop=4
